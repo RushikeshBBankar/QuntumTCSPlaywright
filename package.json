@@ -1,0 +1,21 @@
+{
+  "name": "quntumtcsplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "WebTest": "npx playwright test --grep=@web",
+    "APITest": "npx playwright test --grep=@API",
+    "UITest": "npx playwright test --grep=@UI"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.1",
+    "allure-commandline": "^2.25.0",
+    "allure-playwright": "^2.10.0"
+  }
+}
