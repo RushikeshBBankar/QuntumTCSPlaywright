@@ -165,6 +165,33 @@ Configure project with jenkins
       i.2 Select "This Project is parameterized" Then select "Add Parameter" dropdown.
       i.3 Select "Chose Parameter" option from the dropDown.
         a. Give name: "Script"
+*/
 
+//15)
+//Git Push 
+/*
+  a. Open VSCode then Click On "Source Control" left side bellow the serch ICON
+  b. Click on "Publish to GitHub"
+  c. Ctrl + Shift + p On top search bar will open
+  d. Search: git Add Remote then select "Add remote from Girhub"
+    d.1 Need to authentication from git
+    d.2 give authentication to git 
+    d.3 Confirm the authentication go to VSCode Click on Account Button bellow the left bottom just above the Setting ICON
+    d.4 You can able to see your github account in vsCode.
+  e. Ctrl + Shift + p On top search bar will open
+  f. Search Publish to GitHub 
+      f.1 Two option display 
+           1. Private Repository
+           2. Public Repository
+      f.2 Give name to TO the repository and select second option
+  g. Click on "Source control"
+      g.1 all the files will display under the Changes.
+      g.2 Click on + button display just ahead to changes, All the files will move in to staged Changes
+      g.3 On top Message text box will display, add a message what we want to related code.
+      g.4 Click on "Commit"
+      g.5 Add the changed file push in the github repository.
+      
+
+       
 
 */
