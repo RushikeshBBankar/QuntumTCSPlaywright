@@ -190,7 +190,8 @@ Configure project with jenkins
       g.3 On top Message text box will display, add a message what we want to related code.
       g.4 Click on "Commit"
       g.5 Add the changed file push in the github repository.
-      
+      g.6 Click On "Sync Changes" button 
+
 
        
 
