@@ -1,5 +1,4 @@
 const { test, expect } = require('@playwright/test');
-const { text } = require('stream/consumers');
 
 test('Child window handling ', async ({ browser }) => {
 
@@ -20,7 +19,6 @@ test('Child window handling ', async ({ browser }) => {
         console.log("This is from next page"+domain)  
 
        await page.locator('#username').fill(domain);
-       //await page.pause()
 
        console.log("this is after fill "+await page.locator('#username').textContent())
 })

@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 
-const {POManager} = require('../PageObjectModal/POManager')
+const { POManager } = require('../PageObjectModal/POManager')
 
 // const {LoginPage} = require('../PageObjectModal/LoginPage');
 // const{DashBoardPage}=require('../PageObjectModal/DashBoardPage')
@@ -17,10 +17,10 @@ test('Product to buy', async ({ page }) => {
        const password = 'Iamking@000';
 
        const poManager = new POManager(page);
-       
+
        //const loginPage = new LoginPage(page)
        const loginPage = poManager.getLoginPage();
-       
+
        //const dashBoard = new DashBoardPage(page)
        const dashBoard = poManager.getDashboardPage()
 
@@ -31,7 +31,7 @@ test('Product to buy', async ({ page }) => {
        const thankYouPage = poManager.getThankPage()
 
        await loginPage.goto();
-       await loginPage.validLogIn(email,password);
+       await loginPage.validLogIn(email, password);
 
        await dashBoard.searchProductAddCart(productName);
        await dashBoard.navigateToCart();
@@ -42,7 +42,7 @@ test('Product to buy', async ({ page }) => {
        await expect(page.locator(".user__name label[type='text']")).toHaveText(email)
 
        await myCart.submitCart()
-       
+
        await expect(page.locator('.hero-primary')).toHaveText(" Thankyou for the order. ");
 
        await thankYouPage.confirmOrder()
