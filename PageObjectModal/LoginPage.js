@@ -11,9 +11,9 @@ class LoginPage {
                 await this.page.goto('https://rahulshettyacademy.com/client');
         }
 
-        async validLogIn(email,password){
-                await this.username.fill(email);
-                await this.password.fill(password);
+        async validLogIn(username,pass){
+                await this.username.fill(username);
+                await this.password.fill(pass);
                 await this.signInButton.click();
                 await this.page.waitForLoadState('networkidle');
         }

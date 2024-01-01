@@ -62,7 +62,7 @@ test('Product to buy', async ({ page }) => {
        await page.locator("button[routerlink*='myorders']").click();
 
        await page.locator("tbody").waitFor();
-       const rows = await page.locator("tbody tr");
+const rows = await page.locator("tbody tr");
 
        for(let i = 0; i< await rows.count(); ++i)
        {

@@ -30,10 +30,7 @@ class CartPage{
                        }
                 }
          
-                //await page.pause();
-         
-                // await expect(this.userNameLabel).toHaveText(email);
-               
+             
 
         } 
 
